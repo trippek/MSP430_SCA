@@ -7,10 +7,16 @@ The MSP430 SCA.ipynb file is well-commented and contains everything that is prov
 ## Data
 I could not upload our power trace data because it exceeded the file size limit.
 
+## MSP430_SCA_v2 (version 2)
+This version differs from the first in a few ways, some of which I included when I uploaded this file:
+- Test code/manual debugging from the first version was excluded.
+- Averaging was implemented so multiple traces can be used for each plaintext. Details are listed in the code.
+- Power traces were filtered to cut out power spikes we think were associated with setting a flag on the MSP430 to identify encryption.
+- The time it takes for the attack is printed.
+
 ## In development
-- Add a feature for smoothing out multiple power traces for the same plaintext.
-- Clean up the data (we think the flag we set on the MSP430 to indicate the beginning and end of the first round of encryption might be causing some irregular power activity at the beginning and end of our traces).
 - Throw a try catch in to weed out any files that aren't .mat.
+- Rewrite the code to take more traces without recalculating for previous traces.
 
 ## Questions
 Contact trippekaris@gmail.com with questions.
