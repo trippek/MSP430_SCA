@@ -13,6 +13,8 @@ This version differs from the first in a few ways, some of which I included when
 - Averaging was implemented so multiple traces can be used for each plaintext. Details are listed in the code.
 - Power traces were filtered to cut out power spikes we think were associated with setting a flag on the MSP430 to identify encryption.
 - The time it takes for the attack is printed.
+Small note after uploading v2:
+Under the heading "List plaintext" I specified that there were 10 power traces saved the path to the folder where they were saved. To test the averaging function that comes later in the code, I made a new folder and copied three of the original traces five times to get a total of 15 traces in the new folder. That folder is the one in the code and the reason it lists 15 traces with five copies of each trace.
 
 ## In development
 - Throw a try catch in to weed out any files that aren't .mat.
