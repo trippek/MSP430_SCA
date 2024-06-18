@@ -1,5 +1,5 @@
 # MATLAB files
-This folder contains the MATLAB files to implement the same functionalities as the MSP430_SCA_vx.ipynb files.
+This folder contains the MATLAB files to implement the same functionalities as the MSP430_SCA_vx.ipynb files. It also contains the Python script used for the CPA algorithm, as mentioned in the Limitations section.
 
 ## Purpose of this folder
 The switch to MATLAB (or option to use MATLAB instead) was motivated by the fact that our raw data files are in .mat format already and because some of the programs we were trying to test in Python were taking days to run with very few debugging messages. It appears that MATLAB avoids long run times through limiting array size. This has caused us to restructure the code slightly through making it more modular and easier to debug.
